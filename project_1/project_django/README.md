@@ -6,7 +6,7 @@ And run the command given below.
 python3 manage.py runserver
 
 
-#Read
+# Read
 You might not run this with browser if you do not give any json data with request.
 In order to run this you have to Install POSTMAN or use onlive version.
 
