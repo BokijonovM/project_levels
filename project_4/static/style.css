@@ -1,0 +1,257 @@
+﻿
+* {
+  box-sizing: border-box;
+
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+body{
+  background-color: #E9ECEF;
+
+}
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #FFFFFF;
+  padding-left: 40%;
+   margin-bottom: 15px;
+  margin-top: 1px;
+  height: 100px;
+}
+.header a {
+padding-left: 5px;
+  float: right;
+}
+.header h1
+{
+  padding-top: 20px;
+
+}
+.header p {
+  font-weight: bold;
+  float: right;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li  {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li a {
+    color: #FFFFFF;
+
+}
+
+.menu li a:visited
+{
+    text-decoration: none;
+}
+.menu li:hover {
+  background-color: #0099cc;
+}
+.spec {
+    padding-left: 30%;
+
+}
+.aside {
+  background-color: #FFFFFF;
+  padding: 15px;
+  text-align: center;
+ height:100vh;
+  border-radius: 4px;
+
+}
+
+.footer {
+     position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+.footer p a{
+ margin-left: 20px;
+border-radius: 50px;
+
+}
+img {
+  border-radius: 50%;
+}
+
+.borderd-content {
+  border: 5px solid grey;
+  border-radius: 4px;
+  height:auto;
+  position: relative;
+}
+
+.borderd-content .title {
+  margin: -10px 0 0 10px;
+  background-color: #E9ECEF;
+  border-radius: 30px;
+  padding-right: 1px;
+  font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+  display: inline-block;
+  position: absolute;
+}
+
+.borderd-content .content {
+color: #286AC5;
+  font-weight: bold;
+  padding: 5px;
+   margin: 7px;
+}
+
+.borderd-content .content .handlers{
+  padding: 1px;
+   margin: 1px;
+    font-weight: lighter;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+.open-button {
+  border: 5px solid grey;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 30%;
+  right: 40%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container h1{
+  color: black;
+}
+
+/* Add styles to the form container */
+.form-container {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 175%;
+color: #8A92A6;
+  width: 516px;
+height: 650px;
+  padding: 10px;
+  background-color: white;
+}
+select {
+    width:200px;
+    height:200px;
+}
+.fr {
+    float:right;
+}
+.fl {
+    float:left;
+}
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  border: 1px solid #286AC5;
+  border-radius: 4px;
+  background-color:  #286AC5;
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  cursor: pointer;
+  width: 130px;
+  height: 44px;
+  marin-left: 10px;
+  margin-bottom:1px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  margin-right: 20px;
+padding: 8px 24px;
+border: 1px solid #286AC5;
+border-radius: 4px;
+width: 130px;
+height: 44px;
+ color: #286AC5;
+background-color: white;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

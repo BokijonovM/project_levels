@@ -1,0 +1,157 @@
+﻿
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #33b5e5;
+  padding-left: 40%;
+   margin-bottom: 15px;
+  margin-top: 1px;
+}
+.header a {
+	padding:20px;
+	float: right;
+}
+
+.header p {
+
+	padding: 10px;
+
+	float: right;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li  {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li a {
+    color: #FFFFFF;
+
+}
+
+.menu li a:visited
+{
+    text-decoration: none;
+}
+.menu li:hover {
+  background-color: #0099cc;
+}
+.spec {
+    padding-left: 30%;
+
+}
+.aside {
+  background-color: #0099cc;
+  padding: 15px;
+
+  text-align: center;
+ height:100vh;
+
+  border-radius: 4px;
+
+}
+
+
+
+
+
+.footer {
+     position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+.footer p a{
+ margin-left: 20px;
+border-radius: 50px;
+
+}
+img {
+  border-radius: 50%;
+}
+
+.borderd-content {
+  border: 5px solid grey;
+  border-radius: 4px;
+  height:auto;
+  margin-top: 20px;
+   border-radius: 10px;
+  position: relative;
+}
+
+.borderd-content .title {
+  margin: -10px 0 0 10px;
+  background-color: #33b5e5;
+    border-radius: 10px;
+  padding-right: 1px;
+  display: inline-block;
+  position: absolute;
+}
+
+.borderd-content .content {
+     font-weight: bold;
+  padding: 5px;
+   margin: 7px;
+}
+
+.borderd-content .content .handlers{
+  padding: 1px;
+   margin: 1px;
+    font-weight: lighter;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

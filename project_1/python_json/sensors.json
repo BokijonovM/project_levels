@@ -1,0 +1,31 @@
+{
+  "sensor": [
+    {
+      "sensor_id": "1",
+      "model": "WS-0001",
+      "payload": "X"
+    },
+    {
+      "sensor_id": "2",
+      "model": "WS-0002",
+      "payload": "XX"
+    },
+    {
+      "sensor_id": "3",
+      "model": "WS-0001",
+      "payload": "XXX"
+    },
+    {
+      "sensor_id": "4",
+      "model": "WS-0003",
+      "payload": "XXX"
+    },
+    {
+      "sensor_id": "5",
+      "model": "WS-0004",
+      "payload": "XXX"
+    }
+  ]
+}
+
+

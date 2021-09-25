@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="header">
+</div>
+<div class = "spec">
+<h1> Inofrmation about all configurations :</h1>
+<ul>
+  {% for row in confs %}
+        <li> {{ row}}</li>
+    {% endfor %}
+ </ul>
+</div>
+
+
+<div class="footer">
+    <p>   <a style="color: #FFFFFF" href="https://www.linkedin.com/company/worldsensing/"> Linkedin</a>  <a style="color: #FFFFFF"  href="https://www.facebook.com/Worldsensing/">Facebook </a> <a  style="color: #FFFFFF"  href="mailto:name@email.com"> jobspoland@worldsensing.com</a>.</p>
+</div>
+</body>
+</html>

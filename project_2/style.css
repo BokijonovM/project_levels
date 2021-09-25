@@ -1,0 +1,149 @@
+﻿.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1px;
+  
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #222;
+  color: crimson;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: white;
+}
+
+.aside {
+  background-color:transparent;
+  padding-left: 1px;
+  padding: 15px;
+  text-align: center;
+  height:100vh;
+  border-radius: 4px;
+  margin-left: 1px;
+}
+
+
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {
+  color: #222;
+}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+img {
+  border-radius: 50%;
+}
+
+.borderd-content {
+  border: 5px solid #222;
+  border-radius: 4px;
+  height: 190px;
+  margin-top: 20px;
+  border-radius: 10px;
+  position:static;
+}
+
+.borderd-content .title {
+  margin: -10px 0 0 10px;
+  background-color: white;
+  border-radius: 1px;
+  padding-right: 1px;
+  display: inline-block;
+  position: absolute;
+  
+}
+
+.borderd-content .content {
+  font-weight: bold;
+  padding: 5px;
+  margin: 7px;
+}
+
+.borderd-content .content .handlers{
+  padding: 1px;
+  margin: 1px;
+  font-weight: lighter;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* footer section styling */
+footer{
+  background: #222;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a{
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+  
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+

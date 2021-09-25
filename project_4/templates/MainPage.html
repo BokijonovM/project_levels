@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--- head section --->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">    <meta charset="UTF-8">
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+   <script type=text/javascript src="{{
+  url_for('static', filename='jquery.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+<!--- header --->
+<div class="header">
+    <h1>WorldSensing - Manage your configurations </h1>
+
+    <a><img alt="Qries" src="{{url_for('static', filename='settings.jpg')}}"
+       width="40" height="30" > </a>
+<p> Hello Username!</p>
+<div >
+
+</div>
+</div>
+
+
+<!--- Side menu --->
+<div class="row">
+
+  <div class="col-3 menu">
+  <div class = "aside">
+    <ul>
+        <li> <h2> Menu</h2> </li>
+    <li><a href="Configs" style="text-decoration: none;">Configurations</a> </li>
+    <li><a href="Handlers" style="text-decoration: none;">Handlers</a></li>
+    <li id ="li">Outputs</li>
+    </ul>
+  </div>
+  </div>
+
+
+  <!--- Container ) --->
+  <div class="col-6">
+    <h1>Configurations</h1>
+       <div class="col-4">
+<div class="borderd-content">
+  <div class="title">WS-0001</div>
+     <div class="content">Handlers: </div>
+     <div class = "handlers">-</div>
+
+     <div class="content">1.Outputs</div>
+    <div class = "handlers"> 2.Console</div>
+</div>
+       </div>
+
+
+          <div class="col-4">
+<div class="borderd-content">
+  <div class="title">WS-0002</div>
+     <div class="content">Handlers:  </div>
+     <div class ="handlers"> 1.padToMultiple-</div>
+
+      <div class="content">Outputs</div>
+    <div class ="handlers"> 1.Console</div>
+</div>
+       </div>
+
+
+
+          <div class="col-4">
+<div class="borderd-content">
+  <div class="title">WS-0003</div>
+
+     <div class="content">Handlers:</div>
+     <div class ="handlers"> 1.padToMultiple-</div>
+         <div class ="handlers"> 2.Trim-</div>
+
+      <div class="content">Outputs</div>
+    <div class ="handlers"> 1.File</div>
+</div>
+       </div>
+
+
+        <div class="col-4">
+<div class="borderd-content">
+  <div class="title">WS-0003</div>
+
+     <div class="content">Handlers: </div>
+        <div class ="handlers"> 1.padToMultiple-</div>
+         <div class ="handlers"> 2.Trim-</div>
+         <div class ="handlers"> 3.Timestap-</div>
+
+      <div class="content">Outputs</div>
+    <div class ="handlers"> 1.File</div>
+    <div class ="handlers"> 1.Console</div>
+           </div>
+       </div>
+
+
+
+       <div class="col-4">
+<button class="open-button" onclick="openForm()">Add new </button>
+
+<div class="form-popup" id="myForm">
+  <form action="#" class="form-container" method="POST">
+    <h1>Add new configuration</h1>
+
+    <label for="email"><b>Sensor model*</b></label>
+    <input type="text" name="sensor" required>
+
+    <label for="psw"><b>Handlers</b></label>
+
+
+<table border='0' align="center">
+ <tr>
+  <td>
+    <select id='selectBox1' size='10' multiple='multiple' style='width:100px; height:50px'>
+   <option value='apr'> Trim </option>
+    <option value='duc'> padToMultiple </option>
+    <option value='hro'> addTimestamp </option>
+
+    </select>
+  </td>
+  <td valign='middle'>
+    <!-- FOUR BUTTONS -->
+    <input type='button' onclick="move_selected('selectBox1','selectBox2')" value='>' style='width:30px'> <br />
+     <input type='button' onclick="move_selected('selectBox2','selectBox1')" value='<' style='width:30px'> <br />
+  </td>
+  <td>
+    <select id='selectBox2' size='10' multiple='multiple' style='width:100px; height:50px' name="sel1">
+
+    </select>
+  </td>
+ </tr>
+</table>
+        <label for="psw"><b>Outputs</b></label>
+
+<table border='0' align="center">
+ <tr>
+  <td>
+    <select id='selectBox3' size='10' multiple='multiple' style='width:100px; height:50px'>
+   <option value='apr'> Console </option>
+    <option value='duc'> File </option>
+    <option value='hro'> Database </option>
+
+    </select>
+  </td>
+  <td>
+    <input type='button' onclick="move_selected('selectBox3','selectBox4')" value='>' style='width:30px'> <br />
+     <input type='button' onclick="move_selected('selectBox4','selectBox3')" value='<' style='width:30px'> <br />
+  </td>
+  <td>
+    <select id='selectBox4' size='5' multiple='multiple' style='width:100px; height:50px' >
+
+    </select>
+  </td>
+ </tr>
+</table>
+       <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    <button  type="submit" class="btn" onclick="closeForm()">Add</button>
+
+  </form>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+<!--- footer --->
+
+<div class="footer">
+    <p>   <a style="color: #FFFFFF"  href="https://www.linkedin.com/company/worldsensing/"> <img alt="Qries" src="{{url_for('static', filename='linkedin.png')}}"
+         width="30" height="20" > </a>  <a style="color: #FFFFFF"  href="https://www.facebook.com/Worldsensing/"><img alt="Qries" alt="Qries" src="{{url_for('static', filename='facebook.png')}}"
+         width="30" height="20" > </a> <a  style="color: #FFFFFF"  href="mailto:name@email.com"> jobspoland@worldsensing.com</a></p>
+</div>
+
+</body>
+</html>

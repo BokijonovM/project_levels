@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div class = "spec">
+<h1> Inofrmation about specfic model : {{ sensor_model}}</h1>
+<ul>
+    {% for row in conf %}
+        <li> {{ row}}</li>
+    {% endfor %}
+ </ul>
+</div>
+</body>
+</html>
