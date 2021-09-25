@@ -8,7 +8,7 @@ python3 manage.py runserver
 
 # Read
 You might not run this with browser if you do not give any json data with request.
-In order to run this you have to Install POSTMAN or use onlive version.
+In order to run this you have to Install POSTMAN or use online version.
 
 And send the request http://127.0.0.1:8000/
 with GET method. In request body give json as given below exapmle.
